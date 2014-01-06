@@ -8,7 +8,7 @@ import com.smilingliuwei.configurator.Configuration;
 
 public class Conf {
 
-    public static enum PRINT {
+    public enum PRINT {
 
         CHILD1_PREFIX( "print_prefix_child1" ), INFO_PREFIX( "print_prefix_info" ), ERROR_PREFIX( "print_prefix_error" );
 

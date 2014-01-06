@@ -26,7 +26,7 @@
     </dependency>
     
     <dependency>
-      <groupId>com.liuwei</groupId>
+      <groupId>com.smilingliuwei</groupId>
       <artifactId>configurator</artifactId>
       <version>1.0</version>
     </dependency>
