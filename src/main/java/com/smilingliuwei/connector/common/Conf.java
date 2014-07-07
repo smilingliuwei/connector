@@ -1,9 +1,6 @@
 package com.smilingliuwei.connector.common;
 
-import java.util.Properties;
-import java.util.Set;
-
-import com.smilingliuwei.configurator.Configuration;
+import java.util.ResourceBundle;
 
 
 public class Conf {
@@ -24,24 +21,11 @@ public class Conf {
             return key;
         }
     }
-
-    private static final Configuration PRINT = new Configuration( Conf.FILE_PATH, "UTF-8" );
-
-    private static final String FILE_PATH = "print.properties";
+    
+    private static final ResourceBundle conf = ResourceBundle.getBundle("print");
 
     public static String getProperty( PRINT key ) {
 
-        return Conf.PRINT.getProperty( key.toString() );
+    	return conf.getString( key.toString() );
     }
-
-    public static Properties getProperties() {
-
-        return Conf.PRINT.getProperties();
-    }
-
-    public static Set<String> getKeySet() {
-
-        return Conf.PRINT.getkeySet();
-    }
-
 }
